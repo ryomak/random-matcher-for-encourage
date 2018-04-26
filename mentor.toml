@@ -1,0 +1,35 @@
+#すべて英語は入れない　IT => アイティ　
+#学科という文字は入れない
+#優先ど　A=3 B=2 C=1 D=0
+######          EX         ###
+############################
+#[[Mentors]]               #
+#Name = "船戸優貴"          #
+#Faculty = "理工学部"       #
+#Department = "数理システム"#
+#Priority = 3              #
+#  [[Mentors.Industries]]  #
+#   Name = "アイティ"       #
+############################
+#
+#
+
+[[Mentors]]
+Name = "北間匠"
+Faculty = "理工学"
+Department = "情報システムデザイン"
+Priority = 2
+  [[Mentors.Industries]]
+    Name = "アイティ"
+  [[Mentors.Industries]]
+    Name = "化粧品"
+
+[[Mentors]]
+Name = "藤井翔大"
+Faculty = "理工学"
+Department = "情報システムデザイン"
+Priority = 3
+  [[Mentors.Industries]]
+    Name = "アイティ"
+  [[Mentors.Industries]]
+    Name = "人材"
