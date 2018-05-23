@@ -1,14 +1,11 @@
-# musicbox
-## usage
-
+## random-matcher-for-encourage
+### how to use
 ```
-go get github.com/ryomak/musicbox
-
+GOOS=windows GOARCH=amd64 go build -o mendan-for-windows  *.go
+go build -o mendan *.go
 ```
 
-```musicbox list```
-曲一覧表示
-
-``` musicbox play {...num} ```
-list に表示された番号を引数に取ると音楽再生（複数可）
-# random-matcher-for-encourage
+### バイナリの実行権限
+```
+sudo chmod 777 mendan
+```
