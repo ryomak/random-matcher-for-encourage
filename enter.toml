@@ -1,0 +1,8 @@
+Name = "山田　太郎"
+Faculty = "理工学"
+Department = "情報システムデザイン"
+Introducer = "キタマタクミ"
+  [[Industries]]
+    Name = "アイティ"
+  [[Industries]]
+    Name = "化粧品"

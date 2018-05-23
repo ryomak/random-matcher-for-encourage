@@ -1,19 +1,40 @@
 package main
 
-import "github.com/BurntSushi/toml"
+import (
+	"os"
+	"path/filepath"
 
-func GetMentors()[]Mentor{
+	"github.com/BurntSushi/toml"
+)
+
+var path string
+
+func init() {
+	p, _ := os.Executable()
+	path = filepath.Dir(p)
+}
+
+func GetMentors() []Mentor {
 	var config MentorConfig
-	_, err := toml.DecodeFile("mentor.toml", &config)
+	_, err := toml.DecodeFile(path+"/mentor.toml", &config)
 	if err != nil {
 		panic(err)
 	}
 	return config.Mentors
 }
 
-func GetRatio()Ratio{
+func GetEnter() Enter {
+	var config Enter
+	_, err := toml.DecodeFile(path+"/enter.toml", &config)
+	if err != nil {
+		panic(err)
+	}
+	return config
+}
+
+func GetRatio() Ratio {
 	var config Ratio
-	_, err := toml.DecodeFile("ratio.toml", &config)
+	_, err := toml.DecodeFile(path+"/ratio.toml", &config)
 	if err != nil {
 		panic(err)
 	}
